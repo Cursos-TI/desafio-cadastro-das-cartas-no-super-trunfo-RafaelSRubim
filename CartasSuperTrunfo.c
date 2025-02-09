@@ -6,29 +6,38 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
+int main (){
+    char nomeCidade[30];
+    char codigocidade [5];
+    int populacao;
+    int area;
+    int PIB;
+    int pontosturisticos;
 
-    int idade, matricula;
-    float altura;
-    char nome[50];
+    printf("digite o nome da cidade: ");
+    fgets(nomeCidade, sizeof(nomeCidade), stdin);
+ 
+    printf("Digite o codigo da cidade: ");
+    fgets(codigocidade, sizeof(codigocidade), stdin);
 
-    printf("digite sua idade: \n");
-    scanf("%d", &idade);
+    printf("Numeros de habitantes: ");
+    scanf("%d", &populacao);
 
-    printf("digite sua altura:\n");
-    scanf("%f", &altura);
+    printf("Tamanho da Cidade: ");
+    scanf("%d", &area);
 
-    printf("digite seu nome: \n");
-    scanf("%s", &nome);
+    printf("PIB :");
+    scanf("%d", &PIB);
 
-    printf("digite sua matricula: \n");
-    scanf("%d", &matricula);
-
-    printf("Nome do aluno: %s - Matricula: %d \n", nome ,matricula);
-    printf("idade: %d - Altura %f", idade, altura);
-
-
-
+    printf("Pontos Turisticos :");
+    scanf("%d", &pontosturisticos);
+  
+    printf("Nome da cidade: %s", nomeCidade);
+    printf("Nome da cidade: %s", codigocidade);
+    printf("População: %d \n", populacao);
+    printf("Área:%d km² \n", area);
+    printf("PIB:R$ %d Bilhões \n", PIB);
+    printf("Pontos Turisticos: %d", pontosturisticos);
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
