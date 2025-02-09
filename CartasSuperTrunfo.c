@@ -7,12 +7,16 @@
 //Teste larissa
 
 int main (){
+    char estado [50];
     char nomeCidade[30];
     char codigocidade [5];
     int populacao;
     int area;
     int PIB;
     int pontosturisticos;
+
+    printf("digite o estado::");
+    fgets(estado, sizeof(estado), stdin);
 
     printf("digite o nome da cidade: ");
     fgets(nomeCidade, sizeof(nomeCidade), stdin);
@@ -31,9 +35,10 @@ int main (){
 
     printf("Pontos Turisticos :");
     scanf("%d", &pontosturisticos);
-  
-    printf("Nome da cidade: %s", nomeCidade);
-    printf("Nome da cidade: %s", codigocidade);
+    
+    printf("Estado: %s", nomeCidade);
+    printf("Cidade: %s", nomeCidade);
+    printf("Codigo da cidade: %s", codigocidade);
     printf("População: %d \n", populacao);
     printf("Área:%d km² \n", area);
     printf("PIB:R$ %d Bilhões \n", PIB);
