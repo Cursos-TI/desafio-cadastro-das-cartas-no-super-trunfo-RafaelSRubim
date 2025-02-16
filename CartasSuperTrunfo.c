@@ -38,7 +38,7 @@ int main (){
     printf("Pontos Turisticos :");
     scanf("%d", &pontosturisticos);
 
-    Densidade_Populacional = populacao/(area*100);
+    Densidade_Populacional = (float)populacao/(area*100);
     PIBPC = (PIB*1000000000)/populacao;
 
     printf("-----------------------------\n");
